@@ -8,7 +8,7 @@ body{
   min-height: 100vh;
   background-color: #c8bfe7;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.75vw;
+  font-size: 1.5vw;
   text-align: center;
 }
 
@@ -17,7 +17,7 @@ body nav{
 }
 
 body h1{
-  font-size: 4vw;
+  font-size: 2vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -162,7 +162,13 @@ nav li:first-child{
   margin: 20vh 20vw;
 }
 
+.meet_the_team{
+  height: 400vh;
+  margin: 20vh 20vw;
+}
+
 .wrapper{
+  height: 100vh
   padding: 0;
   margin: 4vw 0vw;
   display: flex;
