@@ -12,35 +12,44 @@
 <body>
   <nav>
     <ul class="sidebar">
-      <li onclick=hideSidebar()><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#meet_the_team">Meet The Team</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <ul>
       <li><a href="#home" class="title_item">Sean's Safe Place</a></li>
       <li class="hideOnMobile"><a href="#home">Home</a></li>
       <li class="hideOnMobile"><a href="#about">About</a></li>
+        <li class="hideOnMobile">
+          <a href="#meet_the_team">Meet The Team ▼</a>
+          <ul class="dropdown">
+            <li><a href="#fiona">Fiona</a></li>
+            <li><a href="#kev">Kev</a></li>
+            <li><a href="#jamie">Jamie</a></li>
+            <li><a href="#sue">Sue</a></li>
+          </ul>
+        </li>
       <li class="hideOnMobile"><a href="#contact">Contact</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
   </nav>
 
   <div id="home" class="group_wrapper">
-    <div class="Intro_contact">
+    <div class="intro_central">
       <h1>Welcome to our website</h1>
       <br>
       <p>Local confidential Mental Health support group in Gosport for ANYONE. Friendly safe space to share life experiences with others.</p>
     </div>
-    <div class="wrapper">
+    <div class="wrapper_modified">
       <div class="central_img">
         <img src="Sean's Safe Space Logo.png">
       </div>
     </div>
   </div>
 
-  <div id="about" class = "meet_the_team">
-
+  <div id="about" class="group_wrapper">
     <div class="wrapper">
       <div class="Intro">
         <h1>About Sean</h1>
@@ -68,12 +77,14 @@
         </p>
           
       </div>
-      <div class="hideOnMobile profile">
+      <div class="profile">
         <img src="sean_img.PNG" alt="">
       </div>
     </div>
+  </div>
 
-    <div class="wrapper">
+  <div id="meet_the_team" class="group_wrapper">
+    <div id="fiona" class="wrapper">
       <div class="Intro">
         <h1>Meet the team: Fiona</h1>
         <br>
@@ -103,51 +114,74 @@
           
           
       </div>
-      <div class="hideOnMobile profile">
+      <div class="profile">
         <img src="fiona_img.png" alt="">
       </div>
     </div>
   
-    <div class="wrapper">
+    <div id="kev" class="wrapper">
       <div class="Intro">
         <h1>Meet the team: Kev</h1>
         <br>
-        <p>Kev is Sean's Dad. He feels that he is now in a good place to be able to support those in need in Gosport.
-          An advocate of helping people to find their way, Kev has a wealth of coaching experience from his varied career.
-          As a veteran, he understands the issues that ex-service people can experience while completing their transition back into civilian life.
-          Being involved in Sean's Safe Space is a fitting way to remember his son - who also helped others </p>
+        <p>Kev is Sean's Dad. He feels that he is now in a good place to be able to support those in need in Gosport.</p>
+
+        <br>
+
+        <p>An advocate of helping people to find their way, Kev has a wealth of coaching experience from his varied career. As a veteran, 
+          he understands the issues that ex-service people can experience while completing their transition back into civilian life.</p>
+          
+        <br>
+     
+        <p>Being involved in Sean's Safe Space is a fitting way to remember his son - who also helped others</p>
+      
       </div>
-      <div class="hideOnMobile profile">
+
+      <div class="profile">
         <img src="kev_img.PNG" alt="">
       </div>
     </div>
 
-    <div class="wrapper">
+    <div id="jamie" class="wrapper">
       <div class="Intro">
         <h1>Meet the team: Jamie</h1>
         <br>
-        <p>Jamie has two daughters. He is a keen darts and pool enthusiast. He prefers listening to music over watching TV.
+        <p>Jamie has two daughters. He is a keen darts and pool enthusiast. He prefers listening to music over watching TV.</p>
+
+        <br>
+
+        <p>Jamie has experienced numerous Mental Health issues in his adult life - including depression, anxiety, and addiction. 
           Since suffering a breakdown, he has spent the last 6+ years working with Vulnerable People.
-          Jamie has experienced numerous Mental Health issues in his adult life - including depression, anxiety, and addiction. 
           He now makes it his mission to support others through their own MH journeys and to lead better lives, which in turn helps him.
+        </p>
+
+        <br>
+
+        <p>  
           Jamie is Sean's brother. Sean helped him when he needed it. Now, Jamie wants to give back and considers it a privilege to do so in Sean's memory 
         </p>
+      
       </div>
-      <div class="hideOnMobile profile">
+      <div class="profile">
         <img src="jamie_img.PNG" alt="">
       </div>
     </div>
 
-    <div class="wrapper">
+    <div id="sue" class="wrapper">
       <div class="Intro">
         <h1>Meet the team: Sue</h1>
         <br>
-        <p>Sue is Sean's Mum. She is keen to do her part to support the people of Gosport and sees Sean's Safe Space as a fitting tribute to the son she adored.
+        <p>Sue is Sean's Mum. She is keen to do her part to support the people of Gosport and sees Sean's Safe Space as a fitting tribute to the son 
+          she adored.
+        </p>
+
+        <br>
+
+        <p>
           In this busy and fast paced world, Sue believes we all need to be kinder to and more supportive of each other.
           Sue is honoured to be a part of our force for good 
         </p>
       </div>
-      <div class="hideOnMobile profile">
+      <div class="profile">
         <img src="sue_img.PNG" alt="">
       </div>
     </div>
@@ -155,7 +189,7 @@
 
   <div id="contact" class = "group_wrapper">
     <div class="wrapper">
-      <div class="Intro_contact">
+      <div class="intro_central">
         <h1>Speak with Us!</h1>
         <br>
         <p>We regularly meet up at C2U Gosport. Check our facebook page or email us to find out when.</p>
