@@ -21,6 +21,7 @@ body{
 
 .first_img{
   height: 20vw;
+  margin-top: 5vh;
 }
 /* Navigation bar */
 
@@ -156,7 +157,6 @@ body{
 
   #home{
     scroll-margin-top: 18vh;
-    height: 200vh;
   }
 
     .wrapper_modified{
@@ -227,7 +227,6 @@ body{
 
   #contact{
     scroll-margin-top: 18vh;
-    height: 200vh;
   }
 
     .contact_img img{

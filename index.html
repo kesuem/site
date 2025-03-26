@@ -14,16 +14,19 @@
   <nav>
     <ul class="sidebar">
       <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-      <li><a href="#about">Our Reasons Why</a></li>
-      <li><a href="#what_to_expect">What to Expect</a></li>
-      <li><a href="#our_house_rules">Our House Rules</a></li>
-      <li><a href="#meet_the_team">Meet The Team</a></li>
-      <li><a href="#news">News & Events</a></li>
-      <li><a href="#resources">Useful Links & Resources</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li onclick=hideSidebar()><a href="#contact">Contact Us</a></li>
+      <li onclick=hideSidebar()><a href="#news">News & Events</a></li>
+      <li onclick=hideSidebar()><a href="#about">Our Reasons Why</a></li>
+      <li onclick=hideSidebar()><a href="#what_to_expect">What to Expect</a></li>
+      <li onclick=hideSidebar()><a href="#our_house_rules">Our House Rules</a></li>
+      <li onclick=hideSidebar()><a href="#meet_the_team">Meet The Team</a></li>
+      <li onclick=hideSidebar()><a href="#resources">Useful Links & Resources</a></li>
+
     </ul>
     <ul>
       <li ><a href="#home" class="title_item"><img src="logo.png" class="nav_img"></a></li>
+      <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
+      <li class="hideOnMobile"><a href="#news">News & Events</a></li>
       <li class="hideOnMobile"><a href="#about">Our Reasons Why</a></li>
       <li class="hideOnMobile"><a href="#what_to_expect">What to Expect</a></li>
       <li class="hideOnMobile"><a href="#our_house_rules">Our House Rules</a></li>
@@ -36,15 +39,50 @@
             <li><a href="#sue">Sue</a></li>
           </ul>
         </li>
-      <li class="hideOnMobile"><a href="#news">News & Events</a></li>
+      
       <li class="hideOnMobile"><a href="#resources">Useful Links & Resources</a></li>
-      <li class="hideOnMobile"><a href="#contact">Contact Us</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
   </nav>
+
   <div class="wrapper">
     <img src="logo.png" class="first_img">
   </div>
+
+  <div id="contact" class = "group_wrapper">
+    <div class="wrapper_modified">
+      <div class="intro_central">
+        <h1>Speak with Us!</h1>
+        <br>
+        <p>We meet every Tuesday 18:45 to 20:15 at C2U, 41 High Street, Gosport, PO12 1DF. People aged 16+ are welcome. Check our facebook page or email us to find out when.</p>
+      </div>
+      <div class="contact_img">
+        <img src="map.png" alt="">
+      </div>
+    </div>
+
+    <div class="thin_wrapper">
+      <div class="icon_button_container facebook">
+        <button onclick="document.location.href = 'https://www.facebook.com/people/Seans-Safe-Space/61566122683982/'">Facebook: Sean's Safe Space</button>
+      </div>
+    </div>
+    <div class="thin_wrapper">
+      <div class="icon_button_container">
+        <button href="#">Email: seanssafespace.gosport@gmail.com</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="news" class = "group_wrapper">
+    <div class="wrapper">
+      <div class="Intro">
+        <h1>News and Events</h2>
+          <br>
+        <p>We are attending Gosport Comic Con on Sunday 13th April! Come down to St Vincent's College, Mill Lane PO12 4QA.  Our Team will be there to chat with you about who we are and what we do. There's lots happening on the day - stalls, interviews, Cosplay, food stands, Celebrity guest appearances... and so much more! Tickets are from £10 per person and will be available on the door.</p>
+      </div>
+    </div>
+  </div>
+
   <div id="about" class="group_wrapper">
     <div class="wrapper">
       <div class="Intro">
@@ -354,43 +392,9 @@
     </div>
   </div>
 
-  <div id="news" class = "group_wrapper">
-    <div class="wrapper">
-      <div class="Intro">
-        <h1>News and Events</h2>
-          <br>
-        <p>We are attending Gosport Comic Con on Sunday 13th April! Come down to St Vincent's College, Mill Lane PO12 4QA.  Our Team will be there to chat with you about who we are and what we do. There's lots happening on the day - stalls, interviews, Cosplay, food stands, Celebrity guest appearances... and so much more! Tickets are £10 per person and will be available on the door.</p>
-      </div>
-    </div>
-  </div>
-
   <h1>Useful Links & Resources</h1>
   <br>
   <div id="resources" class="resource_grid">
-  </div>
-
-  <div id="contact" class = "group_wrapper">
-    <div class="wrapper_modified">
-      <div class="intro_central">
-        <h1>Speak with Us!</h1>
-        <br>
-        <p>We meet every Tuesday 18:45 to 20:15 at C2U, 41 High Street, Gosport, PO12 1DF. People aged 16+ are welcome. Check our facebook page or email us to find out when.</p>
-      </div>
-      <div class="contact_img">
-        <img src="map.png" alt="">
-      </div>
-    </div>
-
-    <div class="thin_wrapper">
-      <div class="icon_button_container facebook">
-        <button onclick="document.location.href = 'https://www.facebook.com/people/Seans-Safe-Space/61566122683982/'">Facebook: Sean's Safe Space</button>
-      </div>
-    </div>
-    <div class="thin_wrapper">
-      <div class="icon_button_container">
-        <button href="#">Email: seanssafespace.gosport@gmail.com</button>
-      </div>
-    </div>
   </div>
 
 
